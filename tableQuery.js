@@ -14,3 +14,10 @@ while (gr.next()) {
       gs.info("number="+number);
       gs.info("number2="+number2);
 }
+
+
+// Sample output
+//*** Script: number=TOLTASK0001001
+//*** Script: number2=TOLTASK0001001
+//*** Script: number=TOLTASK0001002
+//*** Script: number2=TOLTASK0001002
