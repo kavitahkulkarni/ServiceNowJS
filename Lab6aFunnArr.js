@@ -1,4 +1,4 @@
-var tableName = 'sys_user';
+function displayList (tableName) {
 var userList = [];
 
 var userGR = new GlideRecord(tableName);
@@ -10,8 +10,15 @@ while (userGR.next()) {
     userList.push(userGR.getDisplayValue());
 }
 
+return userList;
+}
+var tableName = 'sys_user';
+var recordList = displayList (tableName);
+gs.info ('recordList : \n'+ recordList .join('\n'));
 
-gs.info ('userList: \n'+ userList.join('\n'));
+
+
+
 
 /* Output
 *** Script: userList: 
