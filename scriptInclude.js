@@ -28,3 +28,7 @@ me.setLastName('Kulkarni');
 
 var displayName = me.getDisplayName();
 gs.info(displayName);
+
+
+/* Output
+*** Script: Kavita Kulkarni */
